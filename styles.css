@@ -1,0 +1,423 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Estilos para el encabezado */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+.logo {
+    margin: 1px 0;
+    max-width: 200px;
+    height: auto;
+}
+
+/* Estilos para la navegación */
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 10px 15px;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+    border-radius: 5px;
+}
+
+/* Sección de proyectos */
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.project {
+    flex: 1 1 calc(33.333% - 20px); /* tres columnas con espacio entre ellas */
+    background-color: #fff;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+/* Secciones */
+section {
+    padding: 60px 0;
+}
+
+h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+/* Sección de contacto */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+form input, form textarea {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+form button {
+    padding: 10px 15px;
+    font-size: 1.2rem;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #555;
+}
+
+/* Pie de página */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+/* Justificar texto en la sección Sobre Nosotros */
+#sobre-nosotros p {
+    text-align: justify;  /* Justifica el texto */
+    font-size: 1em;
+    color: #555; /* Color suave para los párrafos */
+}
+
+/* Estilos para la sección Sobre Nosotros */
+#sobre-nosotros .mission, 
+#sobre-nosotros .vision, 
+#sobre-nosotros .team {
+    margin-bottom: 20px;  /* Espacio entre subsecciones */
+    padding: 10px;
+    border-left: 4px solid #C0910B;  /* Línea decorativa a la izquierda */
+    background-color: #E8E8E7;  /* Fondo suave */
+    border-radius: 8px;
+}
+
+#sobre-nosotros h3 {
+    color: #264653; /* Color para los títulos */
+    font-size: 1.5em;
+}
+
+#sobre-nosotros p {
+    font-size: 1em;
+    color: #555; /* Color suave para los párrafos */
+}
+
+/* Justificar texto en la sección de Inicio (Bienvenidos a Proyecorp) */
+#inicio p {
+    text-align: justify;  /* Justifica el texto */
+    font-size: 1em;
+    color: #555; /* Color suave para el párrafo */
+}
+
+/* Estilos para los servicios e íconos */
+.servicios-lista {
+    display: flex;
+    justify-content: space-around; /* Espacia los elementos de manera uniforme */
+    align-items: center; /* Alinea los íconos y el texto verticalmente */
+    list-style: none; /* Elimina los puntos de la lista */
+    padding: 0;
+    margin: 0;
+    flex-wrap: wrap; /* Permite que los servicios se ajusten a múltiples líneas si el espacio es pequeño */
+}
+
+.servicios-lista li {
+    display: flex;
+    align-items: center; /* Alinea el icono y el texto en cada servicio */
+    margin: 10px; /* Espacio alrededor de cada servicio */
+    flex-basis: 20%; /* Hace que cada servicio ocupe el 20% del ancho del contenedor */
+    text-align: center;
+    font-size: 1.5em; /* Ajusta el tamaño del texto aquí */
+}
+
+.icono-servicio {
+    width: 80px; /* Ajusta el tamaño del icono según tu preferencia */
+    margin-right: 10px; /* Espacio entre el icono y el texto */
+}
+
+/* Cambiar la fuente solo para el contenido de las secciones "Bienvenido a Proyecorp" y "Sobre Nosotros" */
+#inicio p, #sobre-nosotros p {
+    font-family: Artifakt Element Ligth, sans-serif; /* Aquí defines la nueva fuente */
+    font-size: 1em; /* Ajustas el tamaño del texto según sea necesario */
+    line-height: 1.6; /* Ajusta el interlineado para mejorar la legibilidad */
+    text-align: justify; /* Mantiene el texto justificado */
+}
+
+/* Cambiar el tamaño de letra solo del título "Arquitectura | Ingeniería | Construcción" */
+header h1 {
+    font-size: 2em; /* Ajusta el tamaño de la fuente según tu preferencia */
+    font-weight: bold; /* Puedes ajustar el grosor del texto si es necesario */
+    margin: 0; /* Ajusta los márgenes para que quede bien alineado */
+    text-align: center; /* Si quieres centrar el título */
+}
+
+/* Cambiar el color de los títulos de las secciones */
+section h2 {
+    color: #333; /* Cambia este color por el que prefieras */
+    font-size: 2.2em; /* Ajusta el tamaño de los títulos de las secciones si es necesario */
+    margin-bottom: 1em; /* Ajusta el espacio debajo del título */
+    text-align: Center; /* Puedes cambiar la alineación si es necesario */
+    font-family: 'Arial Rounded MT Bold', sans-serif; /* Cambia el tipo de letra, usa la fuente que prefieras */
+}
+
+/* Estilo del overlay de lightbox */
+.lightbox-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8); /* Fondo oscuro */
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+/* Estilo de la imagen en el overlay */
+.lightbox-overlay img {
+    max-width: 90%;
+    max-height: 90%;
+    border: 5px solid white;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Sombra para darle profundidad */
+}
+
+/* Mostrar la lightbox cuando se haga clic */
+.show-lightbox {
+    display: flex;
+}
+
+/* Estilos para el carrusel de imágenes */
+.carousel {
+    position: relative;
+    display: block;
+    align-items: center;
+    max-width: 1200px;
+    overflow: hidden;
+    margin: 20px 0;
+}
+
+.carousel-images {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-images img {
+    max-width: 100%;
+    display: block;
+}
+
+button.prev, button.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    z-index: 1;
+}
+
+button.prev {
+    left: 0;
+}
+
+button.next {
+    right: 0;
+}
+
+/* Estilo para la lightbox */
+.lightbox-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.5s;
+}
+
+.lightbox-overlay.show-lightbox {
+    visibility: visible;
+    opacity: 1;
+}
+
+.lightbox-overlay img {
+    max-width: 90%;
+    max-height: 90%;
+}
+
+/* Contenedor general que envuelve los proyectos */
+.projects {
+    width: 100%; /* Hace que el contenedor ocupe todo el ancho disponible */
+    max-width: 1200px; /* Limita el ancho máximo del contenedor */
+    margin: 0 auto; /* Centra el contenedor si no ocupa el 100% */
+    padding: 20px; /* Puedes ajustar el padding si quieres más o menos espacio interno */
+}
+
+/* Contenedor individual para cada proyecto */
+.project {
+    width: 100%; /* Asegura que cada contenedor de imagen ocupe el 100% del ancho del contenedor padre */
+    margin-bottom: 5px; /* Espacio entre los contenedores */
+}
+
+/* Ajuste del tamaño de las imágenes */
+.project img {
+    width: 100%; /* Hace que la imagen ocupe todo el ancho del contenedor */
+    height: 300px; /* Mantiene las proporciones de la imagen */
+    object-fit: cover; /* Ajusta la imagen sin distorsionarla */
+    border-radius: 8px; /* Mantiene las esquinas redondeadas */
+}
+
+/* Modificar el ancho del contenedor de cada proyecto */
+.project {
+    width: 100%; /* Ocupa el 100% del ancho de su contenedor padre */
+    max-width: 1200px; /* Limita el ancho máximo para cada proyecto */
+    margin: 0 auto 5px; /* Centra el contenedor y añade espacio debajo */
+    padding: 20px; /* Ajusta el padding interno */
+    box-sizing: border-box; /* Incluye padding y bordes en el tamaño total del contenedor */
+}
+
+/* Ajustar el tamaño de las imágenes dentro del artículo */
+.project img {
+    width: 100%; /* La imagen ocupará todo el ancho del contenedor .project */
+    height: 250px; /* Mantiene las proporciones de la imagen */
+    object-fit: cover; /* Recorta la imagen para ajustarse al contenedor sin distorsión */
+    border-radius: 8px; /* Mantiene esquinas redondeadas */
+}
+
+/* Ajuste opcional para el texto dentro del proyecto */
+.project h3, .project p {
+    margin: 10px 0;
+    text-align: left; /* Alineación del texto (puedes modificar según el diseño) */
+}
+
+/* Estilos para la sección de lightbox */
+.lightbox {
+    display: grid; /* Usar grid para crear cuadrículas */
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Ancho mínimo de las imágenes a 250px */
+    gap: 20px; /* Separación entre las imágenes */
+    margin: 20px auto; /* Centrar el contenedor */
+}
+
+.lightbox a {
+    display: block; /* Asegura que los enlaces ocupen el espacio completo */
+}
+
+.lightbox img {
+    width: 100%; /* Ajusta la imagen al contenedor */
+    height: 250px; /* Mantiene la relación de aspecto */
+    object-fit: cover; /* Asegura que las imágenes se recorten adecuadamente */
+    border-radius: 8px; /* Bordes redondeados para las imágenes */
+}
+
+/* Responsive: para pantallas pequeñas */
+@media (max-width: 768px) {
+    .project {
+        flex: 1 1 calc(50% - 20px); /* Dos columnas en pantallas más pequeñas */
+    }
+}
+
+@media (max-width: 480px) {
+    .project {
+        flex: 1 1 100%; /* Una columna en pantallas muy pequeñas */
+    }
+}
+
+.carousel {
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+    margin: auto; /* Centra el carrusel */
+}
+
+.carousel-images {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carousel-images img {
+    max-width: 100%;
+    display: block;
+    min-width: 100%; /* Cada imagen ocupará todo el ancho del carrusel */
+}
+
+button.prev,
+button.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    z-index: 1;
+}
+
+button.prev {
+    left: 10px; /* Espacio del botón a la izquierda */
+}
+
+button.next {
+    right: 10px; /* Espacio del botón a la derecha */
+}
+
+.carousel-images {
+    display: flex; /* Asegúrate de que las imágenes estén en una fila horizontal */
+    transition: transform 0.5s ease; /* Suaviza el desplazamiento */
+    width: calc(25% * totalImages); /* Asegúrate de que el contenedor tenga suficiente ancho */
+}
